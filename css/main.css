@@ -32,7 +32,11 @@ ul{
 a{
     color: black;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+}
+
+a:hover{
+    cursor: pointer;
 }
 
 #left, #right{
@@ -97,9 +101,35 @@ a{
     align-items: center;
 }
 
+#chefDiv button{
+    position: relative;
+    bottom: -110px;
+    left: -10px;
+    width: 170px;
+    height: 50px;
+    background-color: black;
+    color: #F6BB64;
+    font-family: DynaPuff;
+    border: none;
+    border-radius: 20px;
+}
+
+#chefDiv button:nth-child(2){
+    width: 55px;
+    background-color: #F5BC64;
+    color: gray;
+}
+
+#chefDiv button:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
 #chefText h1{
     font-size: 80px;
 }
+
+
 
 #cookieDiv{
     display: flex;
@@ -137,7 +167,6 @@ a{
     rotate: calc(-20deg);
     border-radius: 70%;
     background-color: #24604C;
-    background-color: #24604C;
     position: absolute;
     z-index: 2;
 }
@@ -145,8 +174,12 @@ a{
 .textCookie{
     z-index: 9;
     position: relative;
-    color: #F6BB64;
     font-family: DynaPuff;
+}
+
+.textCookie p{
+    color: #F6BB64;
+    font-size: 30px;
 }
 
 
@@ -187,8 +220,8 @@ h1{
 
 
 .greenBlob {
-    width: 150px;
-    height: 100px;
+    width: 170px;
+    height: 130px;
     rotate: calc(-20deg);
     border-radius: 70%;
     background-color: #24604C;
@@ -203,6 +236,7 @@ h1{
     font-family: DynaPuff;
 }
 
+
 .priceTag {
     /* background-color: green; */
     display: flex;
@@ -214,9 +248,13 @@ h1{
 
 }
 
-.priceTag p{
+.priceTag p:not(:first-child){
     color: #F6BB64;
-    font-size: 35px;
+    font-size: 50px;
+}
+
+.priceTag p:first-child{
+    color: #F6BB64;
 }
 
 .ratedDiv{
@@ -238,8 +276,18 @@ h1{
 }
 
 .picksRight{
-    width: 69%;
+    width: 70%;
     background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.product{
+    background-color: green;
+    width: 100%;
+    height: 30%;
 }
 
 @font-face {
