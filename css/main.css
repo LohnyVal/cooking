@@ -12,14 +12,11 @@ nav{
     display: flex;
     justify-content: space-evenly;
     height: 100px;
-    /* background-color: lightblue; */
-    /* border-bottom: 1px solid black; */
 }
 
 ul{
     display: flex;
     list-style-type: none;
-    /* background-color: blueviolet; */
     width: 28%;
 }
 
