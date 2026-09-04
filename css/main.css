@@ -1,3 +1,14 @@
+:root{
+    --primary-color: pink;
+    --text-color: red;
+    --primary-border-radius: 30px;
+    --circle-color: #24604C;
+    --primary-font: "DynaPuff";
+    --big-text: 80px;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -56,7 +67,6 @@ a:hover{
 .wrapper{
     display: flex;
     justify-content: center;
-    /* background-color: green; */
     flex-wrap: wrap;
     gap: 10px;
 }
@@ -67,7 +77,7 @@ a:hover{
     width: 70%;
     height: 650px;
     background-color: #F5BC64;
-    border-radius: 30px;
+    border-radius: var(--primary-border-radius);
     flex-direction: column;
     position: relative;
 }
@@ -81,7 +91,7 @@ a:hover{
     width: 28%;
     height: 350px;
     background-color: #88BEE1;
-    border-radius: 30px;
+    border-radius: var(--primary-border-radius);
     position: relative;
 }
 
@@ -106,7 +116,7 @@ a:hover{
     height: 50px;
     background-color: black;
     color: #F6BB64;
-    font-family: DynaPuff;
+    font-family: var(--primary-font);
     border: none;
     border-radius: 20px;
 }
@@ -123,7 +133,7 @@ a:hover{
 }
 
 #chefText h1{
-    font-size: 80px;
+    font-size: var(--big-text);
 }
 
 
@@ -138,7 +148,7 @@ a:hover{
     height: 600px;
     position: relative;
     top: -300px;
-    border-radius: 30px;
+    border-radius: var(--primary-border-radius);
 }
 
 #cookieDiv div img{
@@ -146,7 +156,7 @@ a:hover{
 }
 
 #cookieDiv div h1{
-    font-size: 80px;
+    font-size: var(--big-text);
 }
 
 .priceTagCookie{
@@ -163,7 +173,7 @@ a:hover{
     height: 70px;
     rotate: calc(-20deg);
     border-radius: 70%;
-    background-color: #24604C;
+    background-color: var(--circle-color);
     position: absolute;
     z-index: 2;
 }
@@ -171,7 +181,7 @@ a:hover{
 .textCookie{
     z-index: 9;
     position: relative;
-    font-family: DynaPuff;
+    font-family: var(--primary-font);
 }
 
 .textCookie p{
@@ -185,12 +195,12 @@ a:hover{
     width: 70%;
     height: 400px;
     background-color: #FFFFFF;
-    border-radius: 30px;
+    border-radius: var(--primary-border-radius);
 }
 
 
 h1{
-    font-family: DynaPuff;
+    font-family: var(--primary-font);
 }
 
 
@@ -221,7 +231,7 @@ h1{
     height: 130px;
     rotate: calc(-20deg);
     border-radius: 70%;
-    background-color: #24604C;
+    background-color: var(--circle-color);
     position: absolute;
     z-index: 2;
 
@@ -230,7 +240,7 @@ h1{
 .text {
     z-index: 9;
     position: relative;
-    font-family: DynaPuff;
+    font-family: var(--primary-font);
 }
 
 
@@ -269,7 +279,7 @@ h1{
 }
 
 .picksLeft h1{
-    font-size: 80px;
+    font-size: var(--big-text);
 }
 
 .picksRight{
